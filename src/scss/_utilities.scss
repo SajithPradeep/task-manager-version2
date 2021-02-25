@@ -1,0 +1,70 @@
+@import "./config";
+
+.login-signup-header {
+  font-size: 2.2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 2rem;
+  color: $active-color;
+}
+
+%input-shared {
+  height: 20px;
+  font-family: "Lucida Casual", "Comic Sans MS";
+  border: none;
+  border-bottom: 1px solid $medium-color;
+}
+
+.login-signup-input {
+  @extend %input-shared;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+  color: $dark-color;
+  text-align: center;
+  min-width: 350px;
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $primary-color;
+    color: $primary-color;
+  }
+}
+
+%btn-common {
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  @extend %btn-common;
+  margin-top: 2rem;
+  background-color: $active-color;
+  color: $light-color;
+  border: 1px solid $active-color;
+  font-size: 1.3rem;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($primary-color, 20%);
+  }
+}
+.btn-secondary {
+  @extend %btn-common;
+  margin-bottom: 1rem;
+  background-color: rgb(241, 241, 197);
+  font-family: "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  &:hover {
+    cursor: pointer;
+    background-color: darken(rgb(241, 241, 197), 10%);
+  }
+}
+
+.lead-paragraph {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.active {
+  border-bottom: 2px solid $medium-color;
+  color: $medium-color;
+}

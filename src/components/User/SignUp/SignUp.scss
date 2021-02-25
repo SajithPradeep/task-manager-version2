@@ -1,0 +1,13 @@
+@import "../../../scss/config";
+@import "../../../scss/utilities";
+
+.signup {
+  &-form {
+    &-item {
+      &-errorMsg {
+        font-size: 0.8rem;
+        color: $error-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../scss/config";
+
+.user-container {
+  text-align: center;
+  font-size: 1.5rem;
+  min-height: calc(100vh - 212px);
+}
+
+@media (max-width: 500px) {
+  .user-container {
+    min-height: calc(100vh - 182px);
+  }
+}

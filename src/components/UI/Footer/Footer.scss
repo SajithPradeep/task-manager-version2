@@ -1,0 +1,17 @@
+@import "../../../scss/config";
+
+footer {
+  background: $dark-color;
+  width: 100%;
+  display: flex;
+  font-family: $primary-font;
+  color: $light-color;
+  padding: 3rem 0;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 0;
+  }
+}

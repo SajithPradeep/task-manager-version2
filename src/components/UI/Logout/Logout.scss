@@ -1,0 +1,25 @@
+@import "../../../scss/config";
+
+.Logout {
+  position: absolute;
+  right: 2rem;
+  top: 4.2rem;
+  color: $dark-color;
+  background: aqua;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px;
+
+  p {
+    font-size: 1.2rem;
+    font-family: $primary-font;
+    color: $light-color;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
